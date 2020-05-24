@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steganography.Web", "Steganography.Web\Steganography.Web.csproj", "{267A6356-8424-427E-8B31-978A4BBCF358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steganography.Web.Tests", "Steganography.Web.Tests\Steganography.Web.Tests.csproj", "{43224E29-F158-43D7-BB70-BBD054086F62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267A6356-8424-427E-8B31-978A4BBCF358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267A6356-8424-427E-8B31-978A4BBCF358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267A6356-8424-427E-8B31-978A4BBCF358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267A6356-8424-427E-8B31-978A4BBCF358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43224E29-F158-43D7-BB70-BBD054086F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43224E29-F158-43D7-BB70-BBD054086F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43224E29-F158-43D7-BB70-BBD054086F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43224E29-F158-43D7-BB70-BBD054086F62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C94C4996-60BD-4CF1-B600-BBC192A4C938}
+	EndGlobalSection
+EndGlobal
