@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Embeddng Form";
+}
+
+<h2>@ViewBag.Message</h2>
+<hr />
+<div class="row" style="display: flex; flex-direction: column">
+    @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new
+    {
+        enctype = "multipart/form-data",@*id = "upload-container"*@ }))
+    {
+        @Html.AntiForgeryToken()
+        @*<div class="form-group">
+                <div class="col-md-10">
+                    <img id="upload-image" src="https://habrastorage.org/webt/dr/qg/cs/drqgcsoh1mosho2swyk3kk_mtwi.png">
+                </div>
+            </div>*@
+        <div class="form-group">
+            <div class="col-md-10">
+                <input class="form-control-file" id="file-input" type="file" name="upload">
+            </div>
+        </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.Label("Your message:", new { @class = "col-md-3 control-label" })
+            <div class="col-md-10">
+                @Html.TextArea("SecretMessage", null, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Resistance value:", new { @class = "col-md-3 control-label" })
+            <div class="col-md-10">
+                @Html.TextBox("Resistance", null, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("p:", new { @class = "col-md-3 control-label" })
+            <div class="col-md-10">
+                @Html.TextBox("PValue", null, new { @class = "form-control" })
+            </div>
+            @Html.Label("q:", new { @class = "col-md-3 control-label" })
+            <div class="col-md-10">
+                @Html.TextBox("QValue", null, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" class="btn btn-primary btn-lg" value="Start embedding" />
+            </div>
+        </div>
+    }
+</div>
+
